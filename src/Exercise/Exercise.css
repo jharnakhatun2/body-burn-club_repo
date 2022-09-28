@@ -2,3 +2,11 @@
     max-width: 100%;
     height: auto;
   }
+  .exercise-card{
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+.addToList{
+    background-color: #ff9711;
+    border-radius: 10px;
+}

@@ -19,7 +19,7 @@
 }
 @media (min-width: 600px) {
     .board-container{ 
-        max-width: 392px;
+        max-width: 327px;
         width: 100%;
         height: auto;
     }

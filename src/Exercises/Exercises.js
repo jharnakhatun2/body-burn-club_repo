@@ -13,7 +13,7 @@ const Exercises = () => {
     
     return (
         <div className="alignment">
-            <h4 className="mb-4">Select today’s exercise</h4>
+            <h4 className="mb-4 text-white">Select today’s exercise</h4>
             <div className="exercise-Card-container">
             {
                 excercises.map(exercise => <Exercise
