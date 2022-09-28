@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Exercise from '../Exercise/Exercise';
+import './Exercises.css';
 
 
 const Exercises = () => {
@@ -11,14 +12,16 @@ const Exercises = () => {
     },[]);
     
     return (
-        <div>
+        <div className="alignment">
             <h3>Select today’s exercise</h3>
+            <div className="exercise-Card-container">
             {
                 excercises.map(exercise => <Exercise
                     key={exercise.id}
                     exercise={exercise}
                 />)
             }
+        </div>
         </div>
     );
 };

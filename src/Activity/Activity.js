@@ -2,15 +2,15 @@ import React from 'react';
 import Board from '../Board/Board';
 import Exercises from '../Exercises/Exercises';
 import Header from '../Header/Header';
+import './Activity.css';
 
 
 
 const Activity = () => {
     return (
         <div>
-            <div className="container">
-                <div className="activity-container">
-                    <div className="exercise-container py-5">
+            <div className="activity-container">
+                    <div className="exercise-container p-5 mx-4">
                         <Header/>
                         <Exercises/>
                     </div>
@@ -19,7 +19,6 @@ const Activity = () => {
                     </div>
                 </div>
             </div>
-        </div>
     );
 };
 

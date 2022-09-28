@@ -1,3 +1,19 @@
 .details h6{
     margin-right: 10px;
 }
+.exercise-time{
+    background-color: #faeddc;
+    border-radius: 10px;
+
+}
+.break-time{
+    background-color: #faeddc;
+    border-radius: 10px;
+}
+.details input{
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #f1e1cb;
+}

@@ -8,7 +8,7 @@ import BoardDetails from '../BoardDetails/BoardDetails';
 
 const Board = () => {
     return (
-        <div className="board-container">
+        <div className="board-container p-3">
             <div className="gymnastic-profile d-flex align-items-center">
                 <img src={profileImg} alt="" />
                 <div className="address ps-4">
@@ -35,6 +35,9 @@ const Board = () => {
             </div>
             <div className="board-details">
                 <BoardDetails></BoardDetails>
+            </div>
+            <div className="toast-button my-4">
+               <h5 className='py-3'>Activity Completed</h5>
             </div>
 
         </div>
