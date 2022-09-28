@@ -1,0 +1,53 @@
+[
+    {
+      "id": "63349148d1fc2ce7e1f2cad8",
+      "image": "./images/1.png",
+      "name": "Mildred Juarez",
+      "about": "Velit non consectetur reprehenderit cupidatat. Culpa esse enim magna id. Exercitation sint officia non sint cillum ut veniam cillum exercitation adipisicing. Esse in proident pariatur qui non fugiat. Amet esse ullamco proident et labore adipisicing in sint proident.\r\n",
+      "age": 32,
+      "timeequired": 25
+    },
+    {
+      "id": "633491484511686b013214d0",
+      "image": "./images/2.png",
+      "name": "Johnston Stevenson",
+      "about": "Amet elit dolor occaecat nostrud duis occaecat reprehenderit. Ex voluptate nulla duis nisi nisi pariatur enim magna. Nisi culpa occaecat voluptate quis nostrud voluptate amet laborum do elit exercitation nostrud magna adipisicing. Ex voluptate tempor aliquip sit mollit.\r\n",
+      "age": 33,
+      "timeequired": 21
+    },
+    {
+      "id": "63349148ae3645e716bd78b3",
+      "image": "./images/3.png",
+      "name": "Mckinney Hensley",
+      "about": "Nulla sit nulla labore ea incididunt est labore ex aliqua veniam minim tempor voluptate non. Lorem exercitation qui laboris qui incididunt laborum sit eu excepteur irure esse amet. Aliquip irure et non cillum.\r\n",
+      "age": 25,
+      "timeequired": 26
+    },
+    {
+      "id": "6334914874d4c988257b72ab",
+      "image": "./images/4.png",
+      "name": "Rios Dixon",
+      "about": "Nisi proident occaecat proident cupidatat consectetur. Amet fugiat amet officia laboris irure adipisicing ea incididunt nisi. Nostrud aliqua voluptate nulla non quis culpa cillum fugiat nulla. Nulla sint dolore officia qui tempor amet fugiat sit elit id consectetur et in. Magna Lorem commodo nostrud ea magna ut consequat labore est magna. Fugiat esse ad duis esse enim consequat do cupidatat irure Lorem nisi elit quis in. Veniam ex id adipisicing eu incididunt culpa duis nulla adipisicing adipisicing deserunt cupidatat nulla.\r\n",
+      "age": 24,
+      "timeequired": 37
+    },
+    {
+      "id": "63349148f27b6488059a0527",
+      "image": "./images/5.png",
+      "name": "Crawford Nash",
+      "about": "Dolore aliquip ut labore occaecat. Fugiat non enim incididunt aliquip dolor irure cillum et exercitation ullamco ea dolor consectetur. Aute labore tempor aliquip quis ipsum ad exercitation sit velit ut velit. Enim voluptate aute ex cillum nisi veniam ullamco eiusmod et. Sint excepteur nulla ut sit nostrud proident sit aute eu fugiat excepteur minim duis ut.\r\n",
+      "age": 38,
+      "timeequired": 21
+    },
+    {
+      "id": "6334914801d13298b6ba55d8",
+      "image": "./images/6.png",
+      "name": "Holden Lambert",
+      "about": "Lorem amet enim non consequat aute qui aliqua sit aliquip minim aute. Nulla nostrud ut eu veniam amet voluptate reprehenderit est. Et nostrud anim elit irure do nisi voluptate anim dolor eiusmod veniam voluptate sit.\r\n",
+      "age": 29,
+      "timeequired": 39
+    }
+  ]
+
+  
+    

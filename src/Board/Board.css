@@ -1,0 +1,14 @@
+.weight p{
+    margin-bottom: 0;
+    
+}
+.height p{
+    margin-bottom: 0;
+}
+.age p{
+    margin-bottom: 0;
+}
+.body-properties{
+    background-color: #faeddc;
+    border-radius: 10px;
+}
