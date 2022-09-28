@@ -7,7 +7,7 @@ const Exercise = (props) => {
         <div className='exercise-card'>
             <img src={image} alt="" />
             <h4>{name}</h4>
-            <span>{about}</span><br/>
+            <span>{about.length < 90 ? about : about.slice(0, 90) + '...'}</span><br/>
             <span>Age : {age}</span>
             <p>Time-Required : {timeequired}</p>
         </div>

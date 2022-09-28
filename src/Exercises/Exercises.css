@@ -1,9 +1,13 @@
 .exercise-Card-container{
     
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: 1fr;
     gap: 2rem;
   }
   .alignment{
     text-align: left;
+  }
+ 
+  @media (min-width: 900px) {
+    .exercise-Card-container{ grid-template-columns: repeat(3, 1fr); }
   }

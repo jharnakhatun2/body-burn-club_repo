@@ -1,3 +1,4 @@
+
 .weight p{
     margin-bottom: 0;
     
@@ -16,3 +17,11 @@
     background-color: #ff9711;
     border-radius: 10px;
 }
+@media (min-width: 600px) {
+    .board-container{ 
+        max-width: 392px;
+        width: 100%;
+        height: auto;
+    }
+  }
+  
