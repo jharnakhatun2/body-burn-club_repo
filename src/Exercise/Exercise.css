@@ -10,3 +10,6 @@
     background-color: #ff9711;
     border-radius: 10px;
 }
+.addToList:hover{
+    cursor: pointer;
+}

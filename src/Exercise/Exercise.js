@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLocationArrow } from '@fortawesome/free-solid-svg-icons';
 import './Exercise.css';
 
 const Exercise = (props) => {
@@ -13,7 +15,7 @@ const Exercise = (props) => {
             <span><strong>Age :</strong> {age} yrs</span>
             <p><strong>Time-Required :</strong> {timeequired}s</p>
             </div>
-            <h6 className="addToList py-3 text-center">Add to List</h6>
+            <h6 className="addToList py-3 text-center">Add to List <FontAwesomeIcon icon={faLocationArrow}/></h6>
         </div>
     );
 };

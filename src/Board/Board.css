@@ -17,6 +17,9 @@
     background-color: #ff9711;
     border-radius: 10px;
 }
+.toast-button h5:hover{
+    cursor: pointer;
+}
 @media (min-width: 600px) {
     .board-container{ 
         max-width: 327px;
