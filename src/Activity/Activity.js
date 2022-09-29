@@ -9,6 +9,7 @@ import './Activity.css';
 const Activity = () => {
     const [excercises, setExcercises] = useState([]);
     const [exerciseTime, setExerciseTime] = useState([]);
+ 
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())

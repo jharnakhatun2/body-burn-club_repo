@@ -1,34 +1,23 @@
-import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import profileImg from '../profile.png';
 import './Board.css';
-import Break from '../Break/Break';
+import { useState } from 'react';
 
 
 const Board = (props) => {
     const {exerciseTime} =props;
-    const [breakTimes, setBreakTimes] = useState([]);
-    
-    
-    const selectedBreakTimes = [
-                    {id:1, time: 15},
-                    {id:2, time: 25},
-                    {id:3, time: 35},
-                    {id:4, time: 45}
-    ]
-    
+    const [times, setTimes] = useState([]);
     
     let totalTime = 0;
     for(const time of exerciseTime){
         totalTime = totalTime + time.timeequired;
     }
-
-    const handleBreakTime = (brTime) => {
-        const newBreakTime = [...breakTimes, brTime];
-        setBreakTimes(newBreakTime);
+    const addBreakTime =(times)=>{
+        const newTimes = times;
+        setTimes(newTimes);
     }
-    
+          
     return (
         <div className="board-container p-3">
             
@@ -58,13 +47,13 @@ const Board = (props) => {
             </div>
 
             {/* Selected Break Time */}
-            <div className="add-a-break d-flex ">
-            {
-                selectedBreakTimes.map(breakTime => <Break 
-                        key={breakTime.id}
-                        breakTime={breakTime}
-                ></Break>)
-            }  
+            <div className="add-a-break  ">
+            <div className="break d-flex my-4 py-2">
+                    <p><span  onClick={()=>addBreakTime(10)}>10</span>m</p>
+                    <p><span  onClick={()=>addBreakTime(20)}>20</span>m</p>
+                    <p><span  onClick={()=>addBreakTime(30)}>30</span>m</p>
+                    <p><span  onClick={()=>addBreakTime(40)}>40</span>m</p>
+                </div>
             </div>
 
             {/* Exercise Time and Break Section */}
@@ -72,10 +61,10 @@ const Board = (props) => {
                 <div className="details">
                     <h3>Exercise Details</h3>
                     <div className="exercise-time d-flex my-4 p-3 align-items-center">
-                        <h6>Exercise Time : <span>{totalTime}</span>s</h6>
+                        <h6>Exercise Time : <span>{totalTime}</span> m</h6>
                     </div>
                     <div className="break-time d-flex p-3 align-items-center">
-                        <h6>Break Time : <span>0</span>s</h6>
+                        <h6>Break Time : <span>{times}</span> m</h6>
                     </div>
                 </div>
             </div>

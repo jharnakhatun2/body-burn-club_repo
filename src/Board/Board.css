@@ -25,7 +25,20 @@
     background-color: #faeddc;
     border-radius: 10px;
 }
-
+.break{
+    background-color: #faeddc;
+    border-radius: 10px;
+}
+.break p{
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+.break p:hover{
+    background-color: #ff9711;
+    cursor: pointer;
+}
 .toast-button h5{
     background-color: #ff9711;
     border-radius: 10px;
