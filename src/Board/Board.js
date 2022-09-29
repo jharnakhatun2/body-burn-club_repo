@@ -37,9 +37,8 @@ const Board = () => {
                 <BoardDetails></BoardDetails>
             </div>
             <div className="toast-button my-4">
-               <h5 className='py-3'>Activity Completed</h5>
+                <h5 className='py-3'>Activity Completed</h5>
             </div>
-
         </div>
     );
 };

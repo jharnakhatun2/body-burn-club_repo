@@ -1,18 +1,43 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Exercise from '../Exercise/Exercise';
 import Board from '../Board/Board';
-import Exercises from '../Exercises/Exercises';
 import Header from '../Header/Header';
 import './Activity.css';
 
 
 
 const Activity = () => {
+    const [excercises, setExcercises] = useState([]);
+    const [exerciseTime, setExerciseTime] = useState([]);
+    useEffect(() => {
+        fetch('data.json')
+            .then(res => res.json())
+            .then(data => setExcercises(data));
+    }, []);
+
+    const handleAddToList = (exercise) =>{
+        console.log(exercise);
+        const newExerciseTime = [...exerciseTime, exercise]; 
+        setExerciseTime(newExerciseTime);
+    }
+
     return (
         <div>
             <div className="activity-container">
                     <div className="exercise-container p-5 mx-4">
                         <Header/>
-                        <Exercises/>
+                        <div className="alignment">
+            <h4 className="mb-4 text-white">Select today’s exercise</h4>
+            <div className="exercise-Card-container">
+                {
+                    excercises.map(exercise => <Exercise
+                        key={exercise.id}
+                        exercise={exercise}
+                        handleAddToList = {handleAddToList}
+                    />)
+                }
+            </div>
+        </div>
                     </div>
                     <div className="board-container">
                         <Board/>
