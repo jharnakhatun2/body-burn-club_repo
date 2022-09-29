@@ -13,6 +13,19 @@
     background-color: #faeddc;
     border-radius: 10px;
 }
+.details h6{
+    margin-right: 10px;
+}
+.exercise-time{
+    background-color: #faeddc;
+    border-radius: 10px;
+
+}
+.break-time{
+    background-color: #faeddc;
+    border-radius: 10px;
+}
+
 .toast-button h5{
     background-color: #ff9711;
     border-radius: 10px;

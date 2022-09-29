@@ -1,15 +1,21 @@
 import React from 'react';
 import './Break.css';
 
-const Break = () => {
+const Break = (props) => {
+    const {id,time} = props.breakTime;
+    const handleBreakTime = (id) => {
+        console.log('Item selected', id);
+    }
+    
+    // const handleBreakTime = (brTime) => {
+    //     const newBreakTime = [...breakTimes, brTime];
+    //     setBreakTimes(newBreakTime);
+    // }
+    
     return (
-        <div>
-            <div className="break d-flex my-4 py-2">
-                <span>15s</span>
-                <span>25s</span>
-                <span>35s</span>
-                <span>45s</span>
-            </div>
+        <div className="break my-4 py-2">
+            <p><span onClick={handleBreakTime(id)}>{time}</span>s</p>
+            
         </div>
     );
 };

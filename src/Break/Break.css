@@ -2,9 +2,13 @@
     background-color: #faeddc;
     border-radius: 10px;
 }
-.break span{
-    background-color: #fff;
+.break p{
+    background-color: #ffffff;
     padding: 14px;
     margin: 0 10px;
     border-radius: 50%;
+}
+.break p:hover{
+    background-color: #ff9711;
+    cursor: pointer;
 }

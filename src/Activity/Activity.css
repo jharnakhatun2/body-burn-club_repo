@@ -14,6 +14,10 @@
   .alignment{
     text-align: left;
   }
+  .board-container{
+    position: sticky;
+    top: 0;
+  }
  
   @media (min-width: 900px) {
     .exercise-Card-container{ grid-template-columns: repeat(3, 1fr); }
