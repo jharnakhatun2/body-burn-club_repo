@@ -3,6 +3,7 @@ import Exercise from '../Exercise/Exercise';
 import Board from '../Board/Board';
 import Header from '../Header/Header';
 import './Activity.css';
+import { addToDb, getStoredCart } from '../utilities/fakedb';
 
 
 
@@ -13,12 +14,31 @@ const Activity = () => {
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
-            .then(data => setExcercises(data));
+            .then(data => {
+                setExcercises(data);
+                
+            });
     }, []);
+
+    useEffect(() => {
+        const storedExercise = getStoredCart();
+        const savedExercise = [];
+        for(const id in storedExercise){
+            const addedExercise = excercises.find(exercise => exercise.id === id);
+            if(addedExercise){
+                const quantity = storedExercise[id];
+                console.log(addedExercise);
+                addedExercise.quantity = quantity;
+                savedExercise.push(addedExercise);
+            }
+        }
+        setExerciseTime(savedExercise);
+    },[excercises])
 
     const handleAddToList = (exercise) => {
         const newExerciseTime = [...exerciseTime, exercise];
         setExerciseTime(newExerciseTime);
+        addToDb(exercise.id)
     }
 
     return (

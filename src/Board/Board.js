@@ -3,6 +3,7 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import profileImg from '../profile.png';
 import './Board.css';
 import { useState } from 'react';
+import { addToDb } from '../utilities/fakedb';
 
 
 const Board = (props) => {
@@ -16,6 +17,7 @@ const Board = (props) => {
     const addBreakTime =(times)=>{
         const newTimes = times;
         setTimes(newTimes);
+        addToDb(times);
     }
           
     return (
