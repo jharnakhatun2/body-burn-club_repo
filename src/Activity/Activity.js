@@ -27,7 +27,7 @@ const Activity = () => {
             const addedExercise = excercises.find(exercise => exercise.id === id);
             if(addedExercise){
                 const quantity = storedExercise[id];
-                console.log(addedExercise);
+                // console.log(addedExercise);
                 addedExercise.quantity = quantity;
                 savedExercise.push(addedExercise);
             }

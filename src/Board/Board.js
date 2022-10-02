@@ -2,8 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import profileImg from '../profile.png';
 import './Board.css';
-import { useState } from 'react';
-import { addToDb } from '../utilities/fakedb';
+import { useEffect, useState } from 'react';
 
 
 const Board = (props) => {
@@ -14,12 +13,21 @@ const Board = (props) => {
     for(const time of exerciseTime){
         totalTime = totalTime + time.timeequired;
     }
+
     const addBreakTime =(times)=>{
         const newTimes = times;
         setTimes(newTimes);
-        addToDb(times);
+        localStorage.setItem('breakTimes',JSON.stringify(times));
     }
-          
+    
+    useEffect(()=>{
+        const getTimes = JSON.parse(localStorage.getItem('breakTimes'));
+        if(getTimes){
+            setTimes(getTimes);
+        } 
+    },[times]);
+    
+             
     return (
         <div className="board-container p-3">
             
@@ -66,7 +74,7 @@ const Board = (props) => {
                         <h6>Exercise Time : <span>{totalTime}</span> m</h6>
                     </div>
                     <div className="break-time d-flex p-3 align-items-center">
-                        <h6>Break Time : <span>{times}</span> m</h6>
+                        <h6>Break Time : <span id='breakTime'>{times}</span> m</h6>
                     </div>
                 </div>
             </div>
