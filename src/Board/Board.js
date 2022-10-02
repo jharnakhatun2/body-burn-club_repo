@@ -3,6 +3,8 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import profileImg from '../profile.png';
 import './Board.css';
 import { useEffect, useState } from 'react';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Board = (props) => {
@@ -26,7 +28,10 @@ const Board = (props) => {
             setTimes(getTimes);
         } 
     },[times]);
+
     
+    // set toastify on Activity Completed button
+    const notify = () => toast("Your activity is successfully completed!!!",{position:"top-center"});
              
     return (
         <div className="board-container p-3">
@@ -81,8 +86,9 @@ const Board = (props) => {
 
             {/* Toast Button section */}
             <div className="toast-button my-4">
-                <h5 className='py-3'>Activity Completed</h5>
+                <h5 onClick={notify} className='py-3'>Activity Completed</h5>
             </div>
+            <ToastContainer/>
         </div>
     );
 };
